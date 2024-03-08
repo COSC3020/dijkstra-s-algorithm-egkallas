@@ -1,5 +1,8 @@
 function dijkstra(graph, sourceNode)  {
-    if(graph.length === 0)
+
+    if(graph.size === 0){
+        return null;
+    }
 
     var distances = {};
     var nodes = Object.keys(graph);
@@ -40,3 +43,4 @@ function dijkstra(graph, sourceNode)  {
 
     return distances;
 }
+
