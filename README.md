@@ -24,3 +24,5 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The complexity of this implementation is $\Theta(V^2 + E)$ because the main loop iterates over every vertices once, the inner loop iterates through each vertex again to find the minimum distance, and then each edge must be traversed. 
