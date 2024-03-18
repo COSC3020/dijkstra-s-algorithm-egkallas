@@ -18,12 +18,13 @@ function dijkstra(graph, sourceNode)  {
         var min = Infinity;
         var nextNode = null;
 
-        for (var node of nodes) {
-            if (visited.has(node) && distances[node] < min) {
+         for (var node of visited) {
+            if (distances[node] < min) {
                 min = distances[node];
                 nextNode = node;
             }
         }
+
 
         if (nextNode === null) {
             break;
